@@ -61,7 +61,7 @@ function somaEDivideValores() {
     if (emails.length == '') {
         console.log('Quem vai pagar a conta?')
     } else {
-        console.log(`A divisão será a seguinte: ${divPorPessoa.toFixed(2)}`)
+        console.log(`A divisão será a seguinte: ${Math.round(divPorPessoa)}`)
     }
 }
 const vf = somaEDivideValores(compras)
