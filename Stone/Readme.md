@@ -4,7 +4,7 @@
 
 ## Tecnologias usadas: Javascript
 
-<h1> Aplicação simples que verifica uma lista de compras, multiplica o valor de cada item pelo quantidade do mesmo, soma o valor total dos itens e divide pelo número de Emails(Pessoas). </h1>
+<h1> Aplicação que verifica uma lista de compras, multiplica o valor de cada item pelo quantidade do mesmo, soma o valor total dos itens e divide pelo número de Emails(Pessoas). </h1>
 
 <h2> Observações: A aplicação possui validação dos dados de entrada para que caso haja alterações no número de pessoas por exemplo, o resultado seja recalculado e exibido corretamente.</h2>
 
