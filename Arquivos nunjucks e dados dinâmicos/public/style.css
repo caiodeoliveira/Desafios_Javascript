@@ -1,0 +1,401 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+
+/* Especificação da fonte: font-family: 'Roboto', sans-serif;*/
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    --cortech: rgb(113, 89, 193)
+}
+
+header {
+    background-color: rebeccapurple;
+}
+
+.comunidade {
+    height: 2px;
+}
+
+.links {
+    padding: 30px;
+    text-align: center;
+}
+
+.sobre:hover {
+    transition: 500ms;
+    border-bottom: white 4px solid;
+    margin: 0.1px;
+}
+
+.conteúdos:hover {
+    transition: 300ms;
+    border-bottom: white 4px solid;
+    margin: 0.1px;
+}
+
+.comunidade:hover {
+    transition: 300ms;
+    border-bottom: white 4px solid;
+    margin: 0.1px;
+}
+
+.email:hover {
+    transition: 300ms;
+    border-bottom: white 4px solid;
+    margin: 0.1px;
+}
+
+.telefone:hover {
+    transition: 300ms;
+    border-bottom: white 4px solid;
+    margin: 0.1px;
+}
+
+.favicon_body {
+    text-align: left;
+    position: absolute;
+    top: 18px;
+    left: 70px;
+}
+
+header a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    padding: 0 40px;
+}
+
+.social_media_links {
+    text-align: right;
+}
+
+.twitter {
+    position: absolute;
+    right: 2%;
+    top: 5%;
+}
+
+.twitter:hover {
+    margin: 5px;
+    transition: 400ms;
+}
+
+.instagram {
+    position: absolute;
+    right: 6%;
+    top: 5%;
+}
+
+.instagram:hover {
+    margin: 5px;
+    transition: 400ms;
+}
+
+.youtube {
+    position: absolute;
+    right: 10%;
+    top: 5%;
+}
+
+.youtube:hover {
+    margin: 5px;
+    transition: 400ms;
+}
+
+
+/* ----- About ----- */
+
+.bg_body {
+    background-color: black;
+    padding: 320px;
+}
+
+.title_enterpraise {
+    color: rebeccapurple;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    position: absolute;
+    top: 100px;
+    left: 603px;
+    cursor: pointer;
+}
+
+.title_enterpraise {
+    border: 3px solid var(--cortech);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.title_enterpraise:hover {
+    background-color: white;
+    filter: brightness(85%);
+    transition: 800ms;
+    border: rebeccapurple 4px solid;
+}
+
+.img_logo {
+    text-align: center;
+    position: absolute;
+    border: white 3px solid;
+    top: 170px;
+    right: 540px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.img_logo:hover {
+    border: white 5px solid;
+    padding: 15px;
+    transition: 800ms;
+}
+
+.description {
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    position: absolute;
+    bottom: 100px;
+    left: 160px;
+}
+
+
+/* ----- Technologies ----- */
+
+.technologies {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.javascript {
+    background-color: rgb(113, 89, 193);
+    padding: 10px 35px;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 200px;
+    left: 200px;
+    border: white 3px solid;
+}
+
+.javascript:hover {
+    padding: 10px 60px;
+    transition: 800ms;
+}
+
+.nodejs {
+    background-color: rgb(113, 89, 193);
+    border-radius: 5px;
+    padding: 10px 30px;
+    position: absolute;
+    margin-top: 200px;
+    left: 490px;
+    border: white 3px solid;
+}
+
+.nodejs:hover {
+    padding: 10px 60px;
+    transition: 800ms
+}
+
+.reactjs {
+    background-color: rgb(113, 89, 193);
+    padding: 10px 30px;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 200px;
+    right: 500px;
+    border: white 3px solid;
+}
+
+.reactjs:hover {
+    padding: 10px 60px;
+    transition: 800ms
+}
+
+.reactnative {
+    background-color: rgb(113, 89, 193);
+    padding: 10px 35px;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 200px;
+    right: 210px;
+    border: white 3px solid;
+}
+
+.reactnative:hover {
+    padding: 10px 60px;
+    transition: 800ms
+}
+
+
+/* ----- Content page -----*/
+
+.content_bg {
+    background-color: black;
+    padding: 152.9px;
+}
+
+.cards {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background-color: rgba(12, 5, 5, 0.747);
+    border: 3px rebeccapurple solid;
+    text-align: center;
+    width: 250px;
+    margin-top: 30px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.card:hover {
+    background-color: rgb(71, 0, 143);
+    transition: 400ms;
+    border: white 3px solid;
+    transition: 400ms;
+}
+
+.card_image_content {
+    margin-top: 30px;
+}
+
+.lauchbase_image {
+    position: absolute;
+    top: 90px;
+}
+
+.card_info {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    top: 10%;
+    margin: 0 20px;
+}
+
+.course_time {
+    background-color: black;
+    padding: 6px;
+    border-radius: 9px;
+    position: relative;
+    right: 20px;
+}
+
+.card_price {
+    background-color: black;
+    padding: 6px;
+    border-radius: 9px;
+    left: 20px;
+}
+
+.featured {
+    background-color: rgb(230, 180, 19);
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    bottom: 250px;
+    left: 150px;
+    width: 100px;
+}
+
+
+/* ===== modal overlay ===== */
+
+.modal_overlay {
+    background-color: rgb(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+}
+
+.close_modal {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.fullscreen {
+    position: absolute;
+    top: 5px;
+    right: 45px;
+    cursor: pointer;
+}
+
+.exitfullscreen {
+    position: absolute;
+    top: 5px;
+    right: 80px;
+    cursor: pointer;
+}
+
+
+/* ===== modal overlay active ===== */
+
+.modal_overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* ===== Maximize ===== */
+
+.modal.maximize {
+    background-color: white;
+    width: 100%;
+    height: 106%;
+    margin: 5vh auto;
+    position: relative;
+    bottom: 5%;
+}
+
+
+/* ======= not-found ======= */
+
+.body_bg_error {
+    background-color: black;
+}
+
+.error_text {
+    color: rebeccapurple;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.error_img {
+    border-radius: 20px;
+    margin: 50 585px;
+}

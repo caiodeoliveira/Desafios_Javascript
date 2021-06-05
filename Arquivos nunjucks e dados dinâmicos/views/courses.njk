@@ -1,0 +1,69 @@
+{% extends "layout.njk" %} 
+
+
+    {% block head %}
+        <title> Conteúdos </title>
+         <link rel=" stylesheet " href=" style.css ">
+    {% endblock %} 
+
+
+{% block content %}
+
+    <body>
+        <header>
+            <div class=" social_Media_links ">
+
+                {% for itens in social_medias %}
+                    <a class=" {{itens.class}} " href=" {{itens.link}} " target=" _blink "> <img src=" {{itens.img}} " alt=" Imagem de {{itens.class}} "> </a>
+                {% endfor %}
+
+            </div>
+        </header>
+
+    <div class=" content_bg ">
+        <section class=" cards ">
+
+            {% for item in items %}
+
+                <div class=" card " id=" {{item.id}} ">
+
+                    <div class=" card_image_container ">
+                        <img src=" {{item.img}} " alt=" Imagem de {{item.id}} ">
+                    </div>
+
+                    <div class=" card_info ">
+                     {% if item.featured %}
+                        <p class="featured"> Em Destaque </p>
+                     {% endif %}
+                        <p class=" course_time "> {{item.duration}} </p>
+                        <p class=" card_price "> {{item.price}} </p>
+                    
+                    </div>
+                </div>
+            {% endfor %}
+
+        </section>
+    </div>
+
+        <div class=" modal_overlay ">
+            <div class=" modal ">
+                <a class=" close_modal ">
+                    <i class=" material-icons "> close </i>
+                </a>
+
+                <a class=" fullscreen ">
+                    <i class=" material-icons "> fullscreen </i>
+                </a>
+
+                <div class=" modal_content ">
+                    <iframe src="" frameborder=" 0 "></iframe>
+                </div>
+
+            </div>
+        </div>
+
+        <script src=" /script.js "></script>
+
+        {% endblock %}
+
+    </body>

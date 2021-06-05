@@ -1,0 +1,37 @@
+ {% extends "layout.njk" %}
+
+    {% block head %}
+        <title> Sobre </title>
+        <link rel="icon" href="https://raw.githubusercontent.com/Rocketseat/bootcamp-launchbase-desafios-02/master/desafios/favicon.ico" type="image/x-icon" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+        <link rel=" stylesheet " href=" style.css ">
+    {% endblock %}
+
+{% block content %}
+
+<body>
+    <section class=" bg_body ">
+        
+        <h1 class=" title_enterpraise ">
+            {{about.title}}
+        </h1>
+
+        <img class=" img_logo " src=" /imgs/Twitter Rocket image.jpg " width=" 20% " alt=" logo rocketseat ">
+
+        <h3 class=" description ">
+            {{about.description}}
+        </h3>
+
+        <ul class=" technologies ">
+            {% for item in itens %}
+                <li class=" {{item.class}} "> {{item.tec}} </li>
+            {% endfor %}
+        </ul>
+        
+    </section>
+
+    {% endblock %}
+
+</body>
+
+</html>

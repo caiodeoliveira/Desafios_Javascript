@@ -1,0 +1,60 @@
+{% extends "layout.njk" %} 
+
+
+    {% block head %}
+        <title> Conteúdos </title>
+        <link rel="icon" href="https://raw.githubusercontent.com/Rocketseat/bootcamp-launchbase-desafios-02/master/desafios/favicon.ico" type="image/x-icon" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+        <link rel="stylesheet" href="style.css">
+    {% endblock %} 
+
+
+{% block content %}
+
+<body>
+    
+    <header>
+        <div class=" social_Media_links ">
+
+            {% for itens in social_medias %}
+                <a class="{{itens.class}}" href=" {{itens.link}} " target="_blink"> <img src="{{itens.img}}" alt="Imagem de {{itens.class}}"> </a>
+            {% endfor %}
+
+        </div>
+    </header>
+
+    <div class=" content_bg ">
+        
+        <section class=" cards ">
+
+            {% for item in courses %}
+
+                <div class="card" id="{{item.id}}">
+
+                    <div class=" card_image_container ">
+                        <img src=" {{item.img}} " alt=" Imagem de {{item.id}} ">
+                    </div>
+            {% if item.featured %}
+
+                <div class="featured"> Em destaque </div>
+
+            {% endif %}
+                    
+                    <div class=" card_info ">
+                        <p class=" course_time "> {{item.duration}} </p>
+                        <p class=" card_price "> {{item.price}} </p>
+                    
+                    </div>
+                </div>
+            {% endfor %}
+        
+        </section>
+
+    </div>
+
+<script src="script.js" ></script>
+
+</body>
+{% endblock %}
+
+    

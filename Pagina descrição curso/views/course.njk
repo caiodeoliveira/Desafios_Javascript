@@ -1,0 +1,54 @@
+
+    {% block head %}
+        <title> {{course.title}} </title>
+        <link rel="icon" href="https://raw.githubusercontent.com/Rocketseat/bootcamp-launchbase-desafios-02/master/desafios/favicon.ico" type="image/x-icon" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+        <link rel=" stylesheet " href=" /style.css ">
+    {% endblock %} 
+
+
+{% block content %}
+<body>
+        <header>
+
+            <div class="links">
+            <a class="sobre" href="/"> Sobre </a>
+            <a class="conteúdos" href="/courses"> Conteúdos </a>
+            <a class=" comunidade " href="https://discordapp.com/invite/gCRAFhc "> Comunidade </a>
+            <a class=" email " href="mailto:oi@rocketseat.com.br "> Email </a>
+            <a class=" telefone " href="tel:+5547992078767 "> Telefone </a>
+        </div>
+
+        <div class="border"></div>
+
+        <div class="course">
+            <p class="course_name"> {{course.name}} </p>
+        </div>
+        
+            <div class=" social_Media_links ">
+
+                {% for itens in social_medias %}
+                    <a class="{{itens.class}}" href="{{itens.link}}" target="_blink"> <img src="{{itens.img}}" alt="Imagem de {{itens.class}}"> </a>
+                {% endfor %}
+
+            </div>
+        </header>
+
+    <div class="content_bg">
+            <div class="card_course" id="{{course.id}}">
+
+                <div class="card_image_container">
+                    <img src="{{course.img}}" alt="Imagem de {{course.id}}">
+                </div>
+
+                <div class="card_info">
+                    <p class="course_time">{{course.duration}}</p>
+                    <p class="card_price">{{course.price}}</p>
+                </div>
+            </div>
+    </div>
+            <div class="description_container">
+                <p class="course_description"> {{course.description}}</p>
+            </div>
+        {% endblock %}
+</body>

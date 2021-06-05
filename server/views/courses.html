@@ -1,0 +1,77 @@
+{% extends "layout.html" %} {% block head %}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Conteúdos </title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="https://raw.githubusercontent.com/Rocketseat/bootcamp-launchbase-desafios-02/master/desafios/favicon.ico" type="image/x-icon" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> {% endblock %} {% block content %}
+
+<body>
+    <header>
+        <div class="social_Media_links">
+            <a class=" twitter " href="https//twitter.com/rocketseat " target="_blink"> <img src="/imgs/twitterRS.svg" alt=" "> </a>
+            <a class=" instagram " href="https://www.instagram.com/rocketseat_oficial/" target="_blink"> <img src="/imgs/instagramRS.svg" alt=""> </a>
+            <a class=" youtube " href="https://www.youtube.com/rocketseat"> <img src="/imgs/youtubeRS.svg" alt=""> </a>
+        </div>
+    </header>
+
+    <div class="content_bg">
+        <section class="cards">
+
+            <div class="card" id="starter">
+
+                <div class="card_image_container">
+                    <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/starter.svg" alt=" Starter logo ">
+                </div>
+
+                <div class="card_info">
+                    <p class="course_time"> 5 módulos</p>
+                    <p class="card_price"> Grátis </p>
+                </div>
+            </div>
+
+            <div class="card" id="launchbase">
+                <div class="card_image_container" class="launchbase_image">
+                    <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/launchbase.svg" width="99.5%" alt=" lauchbase logo ">
+                </div>
+
+                <div class="card_info" class="info_launchbase">
+                    <p class="course_time"> 6 módulos</p>
+                    <p class="card_price"> R$ 990,00 </p>
+                </div>
+            </div>
+
+            <div class="card" id="gostack">
+                <div class="card_image_container">
+                    <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/gostack.svg" alt=" Gostack logo ">
+                </div>
+
+                <div class="card_info">
+                    <p class="course_time"> 9 módulos</p>
+                    <p class="card_price"> R$ 1880,00 </p>
+
+                </div>
+        </section>
+        </div>
+
+        <div class="modal_overlay">
+            <div class="modal">
+                <a class="close_modal">
+                    <i class="material-icons"> close </i>
+                </a>
+
+                <a class="fullscreen">
+                    <i class="material-icons"> fullscreen </i>
+                </a>
+
+                <div class="modal_content">
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <script src="/script.js"></script>
+
+        {% endblock %}
+
+</body>
