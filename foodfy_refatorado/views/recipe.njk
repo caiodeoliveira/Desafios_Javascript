@@ -1,0 +1,63 @@
+{% extends "layout.njk" %}
+
+<body>
+
+    {% block content %}
+
+    <section class="card_recipe">
+
+        <div class="card_container" id="{{item.image}}">
+            <img class="card_image_container" src="{{item.image}}" alt="Imagem {{item.title}}">
+
+            <div class="card_info">
+                <p class="foodname"> {{item.title}} </p>
+                <div class="foodcooker"> {{item.author}} </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="making_food">
+        <div class="ingredients_container">
+            <h1 class="ingredients_topic"> Ingredientes <button class="button"> ESCONDER </button></h1>
+
+            <div class="content">
+                {% for item in item.ingredients %}
+                    <ul class="ingredients_list">
+                        <li class="ingredient_item"> {{item}} </li>
+                    </ul>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="preparation_container">
+            <h1 class="preparation_topic"> Modo de Preparo <button class="button"> ESCONDER </button></h1>
+
+            <div class="content">
+                {% for item in item.preparation %}
+                    <ol class="preparation_list">
+                        <p class="preparation_item"> {{item}} </p>
+                    </ol>
+                {% endfor %}
+            </div>
+
+    <div class="information_container">
+            <h1 class="information_topic"> Informações Adicionais <button class="button"> ESCONDER </button></h1>
+
+            <div class="content">
+                    <div class="information_text">
+                        <p class="information_item"> {{item.information}} </p>
+                    </div>
+            </div>
+    
+    </section>
+
+    <footer>
+        <p>{{footer_recipe.footer_text}}</p>
+    </footer>
+
+    <script src="/script.js"></script>
+
+    {% endblock %}
+
+</body>

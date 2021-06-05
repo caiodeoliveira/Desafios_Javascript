@@ -1,0 +1,44 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+    {% for item in item %}
+        <section class="description">
+            <h1 class="title_description">
+                {{item.title_description}}
+            </h1>
+            <p class="text_1">
+                {{item.text_1}}
+            </p>
+
+            <p class="text_2">
+                {{item.text_2}}
+            </p>
+
+            <h3 class="title_description2">
+                {{item.title_description2}}
+            </h3>
+
+            <p class="text_3">
+                {{item.text_1}}
+            </p>
+
+            <p class="text_4">
+                {{item.text_2}}
+            </p>
+
+            <h3 class="title_description3">
+                {{item.title_description3}}
+            </h3>
+
+            <p class="text_5">
+                {{item.text_2}}
+            </p>
+        </section>
+    {% endfor %}
+
+    <footer>
+        <p>{{footer_about.footer_text}}</p>
+    </footer>
+
+{% endblock %}

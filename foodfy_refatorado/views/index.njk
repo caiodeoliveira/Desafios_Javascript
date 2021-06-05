@@ -1,0 +1,42 @@
+{% extends "layout.njk" %}
+
+<body>
+
+    {% block content %}
+
+    <section class="section_one">
+        <div class="pink_area">
+            <h1 class="h1_text"> {{index_item.h1_text}} </h1>
+            <p class="gray_text"> {{index_item.gray_text}} </p>
+            <img src="/chef.png" alt="{{index_item.chef_alt}}">
+        </div>
+    </section>
+
+    <div class="h2_text">
+        <h2> Mais acessadas </h2>
+    </div>
+
+    <section class="cards">
+
+    {% for item in itens %}
+
+        <div class="card">
+            <img class="card_image_content" width=" 300px " src="{{item.image}}" alt="{{item.title}}">
+
+            <div class="card_info">
+                <p class="food_name"> {{item.title}} </p>
+                <div class="food_cooker"> {{item.author}} </div>
+            </div>
+        </div>
+
+    {% endfor %}
+
+    </section>
+
+    <footer>
+        <p>{{index_item.footer_text}}</p>
+    </footer>
+
+    {% endblock %}
+
+</body>

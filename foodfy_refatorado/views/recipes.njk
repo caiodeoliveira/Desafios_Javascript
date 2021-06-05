@@ -1,0 +1,32 @@
+{% extends "layout.njk" %}
+
+<body>
+
+    {% block content %}
+
+    <section class="cards">
+
+        {% for item in itens %}
+
+        <div class="card" id="{{ itens.indexOf(item) }}">
+            <img class="card_image_content" width=" 300px " src="{{item.image}}" alt="{{item.title}}">
+
+            <div class="card_info">
+                <p class="food_name"> {{item.title}} </p>
+                <div class="food_cooker"> {{item.author}} </div>
+            </div>
+        </div>
+
+    {% endfor %}
+
+    </section>
+
+    <footer>
+        <p>{{footer_recipes.footer_text}}</p>
+    </footer>
+
+    <script src="/script.js"></script>
+
+    {% endblock %}
+
+</body>
