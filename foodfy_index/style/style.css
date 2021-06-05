@@ -1,0 +1,303 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap';
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+:root {
+    --color-black: #111111;
+}
+
+body {
+    background-color: white;
+    max-width: 940px;
+}
+
+header {
+    padding: 35px;
+}
+
+header img {
+    position: relative;
+    left: 231px;
+    margin-right: 122.4px;
+}
+
+header a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--color-black);
+    text-decoration: none;
+    position: relative;
+    left: 196px;
+    margin-left: 30px;
+}
+
+.header_link {
+    position: relative;
+    bottom: 10px;
+}
+
+
+/* ----- Fim do Header ----- */
+
+.pink_area {
+    background-color: #FBDFDB;
+    border-radius: 30px;
+    width: 940px;
+    height: 366px;
+    position: relative;
+    left: 265px;
+    top: 36px;
+    margin-bottom: 98px;
+}
+
+.pink_area img {
+    width: 216px;
+    height: 300px;
+    position: relative;
+    left: 524px;
+    bottom: 38px;
+}
+
+.h1_text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    position: relative;
+    top: 117px;
+    left: 60px;
+}
+
+.gray_text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    opacity: 70%;
+    width: 320px;
+    position: relative;
+    top: 135px;
+    left: 60px;
+}
+
+
+/* ----- Section cards ----- */
+
+.h2_text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    position: absolute;
+    top: 509px;
+    left: 265px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.cards {
+    width: 940px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    position: relative;
+    left: 265px;
+    margin-bottom: 112px;
+}
+
+.card {
+    position: relative;
+    top: 48px;
+}
+
+.card_image_content {
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.card_info {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.food_name {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.food_cooker {
+    color: #777777;
+    font-size: 14px;
+}
+
+
+/* ----- Footer ----- */
+
+footer p {
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    width: 300px;
+    font-size: 14px;
+    position: relative;
+    left: 580px;
+    padding: 23px 0px 0px 23px;
+}
+
+footer {
+    background-color: #eeeeee;
+    width: 1349px;
+    height: 62px;
+    position: relative;
+    /* top: 50px; */
+}
+
+
+/* ----- Página Sobre ----- */
+
+.about {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.description {
+    position: relative;
+    left: 265px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.title_description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+
+.text_1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #444444;
+    width: 950px;
+    margin-top: 28px;
+}
+
+.text_2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #444444;
+    width: 950px;
+    margin-top: 28px;
+}
+
+.title_description2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.text_3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #444444;
+    width: 950px;
+    margin-top: 28px;
+}
+
+.text_4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #444444;
+    width: 950px;
+    margin-top: 28px;
+}
+
+.title_description3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.text_5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #444444;
+    width: 950px;
+    margin-top: 28px;
+}
+
+
+/*      Página de Receitas      */
+
+.recipes {
+    font-weight: bold;
+}
+
+
+/*      Modal_overlay       */
+
+.modalOverlay {
+    background-color: rgb(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: #FFFFFF;
+    width: 660px;
+    height: 413px;
+    margin: 20vh auto;
+    border-radius: 16px;
+}
+
+.modal_img {
+    position: relative;
+    left: 30px;
+    top: 30px;
+    border-radius: 15px;
+    width: 600px;
+    height: 200px;
+}
+
+.modal_foodname {
+    font-family: 'Roboto', sans-serif;
+    color: #111111;
+    font-size: 24px;
+    font-weight: normal;
+    position: relative;
+    top: 20px;
+    text-align: center;
+    margin-top: 28px;
+}
+
+.modal_creator {
+    font-family: 'Roboto', sans-serif;
+    color: #777777;
+    font-size: 18px;
+    font-weight: normal;
+    position: relative;
+    top: 10px;
+    text-align: center;
+    margin-top: 21px;
+}
+
+.close_modal {
+    font-family: 'Roboto', sans-serif;
+    color: #777777;
+    font-size: 16px;
+    position: relative;
+    top: 65px;
+    left: 275px;
+    cursor: pointer;
+}
+
+
+/*      ModalOverlay active        */
+
+.modalOverlay.active {
+    opacity: 1;
+    visibility: visible;
+}
