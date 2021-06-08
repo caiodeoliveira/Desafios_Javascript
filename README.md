@@ -11,7 +11,7 @@
 ###  Funções e métodos, Estruturas de repetição e Escopos - Link: [https://github.com/caiodeoliveira/Introdu-o-a-programa-o-/blob/master/Programa3.js]
 ###  Booleanos - [https://github.com/caiodeoliveira/Iniciando-no-Javascript/tree/master/Booleanos]
 
-<h1> Front End: </h1>
+<h1> Front End (Vanilla JS): </h1>
 
 ### Favicon - [https://github.com/caiodeoliveira/Rocketseat/tree/main/Favicon]
 ### Foodfy - [https://github.com/caiodeoliveira/Rocketseat/tree/main/foodfy_index]
