@@ -12,7 +12,7 @@ for (let card of cards) {
         const cooker_name = card.querySelector('.food_cooker').textContent
 
         modalOverlay.classList.add('active')
-        modalOverlay.querySelector('img').src = `/imgs/${imgID}.png`
+        modalOverlay.querySelector('img').src = `/assets/${imgID}.png`
         modalOverlay.querySelector('.modal_foodname').innerHTML = `${food_name}`
         modalOverlay.querySelector('.modal_creator').innerHTML = `${cooker_name}`
     })
