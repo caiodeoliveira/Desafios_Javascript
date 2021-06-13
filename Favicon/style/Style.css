@@ -144,7 +144,8 @@ main img {
     margin-bottom: 20px;
 }
 
-.starter_button {
+.starter_button,
+.bootcamp_button {
     /* Letras */
     font-family: "Source Sans Pro";
     font-weight: 600;
@@ -180,25 +181,6 @@ main img {
     word-wrap: break-word;
     width: 450px;
     margin-bottom: 20px;
-}
-
-.bootcamp_button {
-    /* Letters */
-    font-family: "Source Sans Pro";
-    font-weight: 600;
-    font-size: 16px;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    line-height: 50px;
-    /* --- box --- */
-    background-color: rgb(113, 89, 193);
-    display: inline-block;
-    padding: 0px 30px;
-    border: white 2px solid;
-    border-radius: 5px;
-    transition: all 150ms linear 0s;
-    box-sizing: border-box;
-    cursor: pointer;
 }
 
 
